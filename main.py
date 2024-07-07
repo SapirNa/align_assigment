@@ -5,9 +5,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from tinydb import TinyDB, Query
 
-from config import DB_PATH
-
 app = FastAPI()
+DB_PATH = "db.json"
 
 
 class Mission(BaseModel):
